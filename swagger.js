@@ -6,7 +6,7 @@ const options = {
     info: {
       title: 'APIs Sequelize',
       version: '1.0.0',
-      description: 'APIs Sequelize | Postgresql',
+      description: 'APIs Test | BizflyCloud',
     },
   },
   apis: ['./routes/*.js', './docs/*.js'], // Đảm bảo đường dẫn này bao gồm tất cả các tệp chứa định nghĩa API

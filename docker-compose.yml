@@ -1,0 +1,12 @@
+  version: '3.8'
+
+  services:
+    test_bizflycloud:
+      image: trantu30950/test_bizflycloud:latest
+      build: .
+      container_name: test_bizflycloud
+      restart: always
+      ports:
+        - '8000:8000'
+      volumes:
+        - ./.env:/app/.env
