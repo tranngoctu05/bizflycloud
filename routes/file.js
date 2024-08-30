@@ -83,7 +83,7 @@ router.post('/upload-multipart', upload.single('file'), async (req, res) => {
         const createMultipartUploadCommand = new CreateMultipartUploadCommand({
             Bucket: bucketName,
             Key: fileName,
-            ContentType: req.file.mimetype, // Sử dụng req.file.mimetype
+            ContentType: req.file.mimetype,
         });
 
         const multipart = await s3.send(createMultipartUploadCommand);
